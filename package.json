@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "browserify-css": "^0.14.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-html2js": "^0.4.2",
+    "gulp-typescript": "^5.0.0-alpha.2",
+    "typescript": "^2.9.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
