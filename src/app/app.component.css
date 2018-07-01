@@ -1,19 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14px;
-
-  height: 100vh;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column;
-  align-content: stretch;
-  align-items: stretch;
-}
-
-#page {
+:host {
   background-color: #f4f5f5;
   position: relative;
   overflow: hidden;
