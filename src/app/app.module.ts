@@ -7,6 +7,14 @@ import { ContentWrapperComponent } from './content-wrapper/content-wrapper.compo
 import { ContentComponent } from './content/content.component';
 import { HeaderComponent } from './header/header.component';
 import { StatusBarComponent } from './status-bar/status-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {
+  MatGridListModule, MatCardModule, MatMenuModule, MatIconModule,
+  MatButtonModule, MatToolbarModule,
+  MatSidenavModule,
+} from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +23,19 @@ import { StatusBarComponent } from './status-bar/status-bar.component';
     ContentWrapperComponent,
     ContentComponent,
     HeaderComponent,
-    StatusBarComponent
+    StatusBarComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

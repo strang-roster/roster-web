@@ -1,14 +1,9 @@
 :host {
-  display: block;
-  margin-left: 0px;
-  position: relative;
-  padding: 0px;
   overflow-y: scroll;
   min-height: auto;
   max-height: 100%;
+
   display: flex;
   flex-flow: column nowrap;
-  flex: 1 1 0;
-
-  background-color: #dddddd;
+  flex: 1 1 auto;
 }
