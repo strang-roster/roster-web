@@ -19,28 +19,11 @@
   overflow: hidden;
 }
 
-.sidebar {
-  width: 250px;
-  min-width: 250px;
-  max-width: 2500px;
+mat-toolbar {
+  height: 64px;
+  z-index: 16;
+  position: relative;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 
-  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.25);
-
-  background-color: #3d46c9;
-
-  z-index: 20;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.content {
-  align-self: auto;
-  min-width: 0px;
-  min-height: auto;
-  max-height: 100%;
-  overflow: hidden;
-  flex: 1 1 auto;
-  order: 2;
-  display: flex;
-  flex-flow: column nowrap;
+  background-color: #46c93d;
 }

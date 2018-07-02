@@ -1,10 +1,15 @@
-mat-toolbar {
-  height: 64px;
-  z-index: 16;
-  position: relative;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+.sidebar {
+  width: 250px;
+  min-width: 250px;
+  max-width: 2500px;
 
-  background-color: #46c93d;
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.25);
+
+  background-color: #3d46c9;
+
+  z-index: 20;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 app-content {
@@ -13,3 +18,4 @@ app-content {
   position: relative;
   padding: 0px;
 }
+
