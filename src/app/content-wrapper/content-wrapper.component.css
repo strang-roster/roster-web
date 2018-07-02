@@ -1,0 +1,11 @@
+:host {
+  align-self: auto;
+  min-width: 0px;
+  min-height: auto;
+  max-height: 100%;
+  overflow: hidden;
+  flex: 1 1 auto;
+  order: 2;
+  display: flex;
+  flex-flow: column nowrap;
+}
