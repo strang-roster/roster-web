@@ -1,0 +1,14 @@
+:host {
+  background-color: #dfdfdf;
+
+  flex-grow: 1;
+}
+
+.link {
+  display: flex;
+}
+
+.link-icon {
+  min-width: 40px;
+  max-width: 40px;
+}
