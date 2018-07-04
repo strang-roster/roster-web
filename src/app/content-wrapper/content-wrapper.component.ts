@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import {MatSidenav} from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-content-wrapper',
   templateUrl: './content-wrapper.component.html',
   styleUrls: ['./content-wrapper.component.css']
 })
-export class ContentWrapperComponent implements OnInit {
+export class ContentWrapperComponent {
+  @ViewChild('sidenav') sidenav: MatSidenav;
 
-  constructor() { }
-
-  ngOnInit() {
+  toggleSidenav() {
+    this.sidenav.toggle();
   }
 
 }
