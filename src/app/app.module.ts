@@ -8,13 +8,15 @@ import {
   MatSidenavModule, MatListModule, MatTableModule,
 } from '@angular/material';
 
+import { PeopleModule } from '../people/people.module';
+import { PeopleComponent } from '../people/people.component';
+
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
 import { HeaderComponent } from './header/header.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { PeopleComponent } from './people/people.component';
 import { SchedulingComponent } from './scheduling/scheduling.component';
 
 const appRoutes: Routes = [
@@ -35,7 +37,6 @@ const appRoutes: Routes = [
     ContentWrapperComponent,
     HeaderComponent,
     DashboardComponent,
-    PeopleComponent,
     SchedulingComponent
   ],
   imports: [
@@ -54,6 +55,8 @@ const appRoutes: Routes = [
     MatSidenavModule,
     MatListModule,
     MatTableModule,
+
+    PeopleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

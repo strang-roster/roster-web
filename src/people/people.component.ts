@@ -60,5 +60,22 @@ export class PeopleComponent {
   displayedColumns: string[] = ['firstName', 'lastName', 'units'];
   dataSource: Member[] = [
     new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
+    new Member('John', 'Doe', [new Troop(1, "Oxford"), new Crew(555, "Goshen")]),
   ];
+
+  navigateToPerson(person: Member) {
+    console.log(person);
+  }
 }
