@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
   links = [
+    new Link('/dashboard', 'home', 'Dashboard'),
+    new Link('/people', 'people', 'People'),
+    new Link('/scheduling', 'schedule', 'Merit Badge Scheduling'),
   ];
 }
 
