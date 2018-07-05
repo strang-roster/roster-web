@@ -1,1 +1,10 @@
-Sidebar
+<mat-nav-list>
+  <a
+      mat-list-item
+      routerLink="{{ link.href }}"
+      class="link"
+      *ngFor="let link of links">
+    <i class="material-icons link-icon">{{ link.icon }}</i>
+    <div>{{ link.text }}</div>
+  </a>
+</mat-nav-list>
