@@ -1,0 +1,32 @@
+:host {
+  flex-grow: 1
+}
+
+.grid-container {
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1 1 auto;
+}
+
+.mat-row:hover {
+  background: rgba(0,0,0, 0.04);
+  cursor: pointer;
+}
+
+.avatar-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+img.avatar {
+  display: inline;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}

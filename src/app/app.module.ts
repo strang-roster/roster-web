@@ -8,8 +8,8 @@ import {
   MatSidenavModule, MatListModule, MatTableModule,
 } from '@angular/material';
 
-import { PeopleModule } from '../people/people.module';
-import { PeopleComponent } from '../people/people.component';
+import { PeopleModule, PeopleRoutes } from './people/people.module';
+import { PeopleComponent } from './people/people.component';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -21,7 +21,11 @@ import { SchedulingComponent } from './scheduling/scheduling.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard',  component: DashboardComponent },
-  { path: 'people',     component: PeopleComponent },
+  {
+    path: 'people',
+    component: PeopleComponent,
+    children: PeopleRoutes,
+  },
   { path: 'scheduling', component: SchedulingComponent },
   { path: '',
     redirectTo: '/dashboard',

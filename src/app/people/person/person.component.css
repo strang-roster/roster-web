@@ -1,0 +1,27 @@
+:host {
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1 1 auto;
+}
+
+mat-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.example-header-image {
+  background-image: url('/assets/wschmitt.JPG');
+  background-size: cover;
+}
+
+.edit-membership {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
