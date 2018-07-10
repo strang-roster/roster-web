@@ -8,10 +8,21 @@ import {
 } from '@angular/material';
 
 import { CampComponent } from './camp.component';
-import { OverviewComponent } from  './overview/overview.component';
+
+import { BaseComponent } from  './base/base.component';
+import { CampDetailComponent } from  './camp-detail/camp-detail.component';
+import { CampSelectorComponent } from  './camp-selector/camp-selector.component';
+import { CampSessionsComponent } from './camp-sessions/camp-sessions.component';
 
 export const CampRoutes: Routes = [
-  { path: '', component: OverviewComponent },
+  {
+    path: '',
+    component: CampSelectorComponent,
+  },
+  {
+    path: ':campId',
+    component: CampDetailComponent,
+  },
 ];
 
 @NgModule({
@@ -31,7 +42,10 @@ export const CampRoutes: Routes = [
   ],
   declarations: [
     CampComponent,
-    OverviewComponent,
+    CampDetailComponent,
+    CampSelectorComponent,
+    CampSessionsComponent,
+    BaseComponent,
   ],
 })
 export class CampModule { }

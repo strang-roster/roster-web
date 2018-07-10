@@ -7,11 +7,11 @@ import { CampSeason } from '../camp-season';
 import { CampSession, SessionType } from '../camp-session';
 
 @Component({
-  selector: 'camp-overview',
-  templateUrl: './overview.component.html',
-  styleUrls: ['./overview.component.css']
+  selector: 'camp-sessions',
+  templateUrl: './camp-sessions.component.html',
+  styleUrls: ['./camp-sessions.component.css']
 })
-export class OverviewComponent implements OnInit {
+export class CampSessionsComponent implements OnInit {
   camp: Camp = new Camp('Edmund D. Strang Scout Reservation');
 
   displayedColumns: string[] = ["number", "type", "startDate", "endDate"];
@@ -41,5 +41,4 @@ export class OverviewComponent implements OnInit {
   sessionType(type: SessionType) {
     return camelCaseToUpperCaseSpaced(SessionType[type]);
   }
-
 }

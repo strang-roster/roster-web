@@ -1,0 +1,12 @@
+:host > *:first-child {
+  margin-top: 0px;
+}
+
+:host > * {
+  margin: 20px 0px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: stretch;
+}
