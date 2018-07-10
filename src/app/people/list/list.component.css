@@ -11,11 +11,6 @@
   flex: 1 1 auto;
 }
 
-.mat-row:hover {
-  background: rgba(0,0,0, 0.04);
-  cursor: pointer;
-}
-
 .avatar-container {
   height: 40px;
   width: 40px;
