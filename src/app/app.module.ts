@@ -10,6 +10,8 @@ import {
 
 import { PeopleModule, PeopleRoutes } from './people/people.module';
 import { PeopleComponent } from './people/people.component';
+import { CampModule, CampRoutes } from './camp/camp.module';
+import { CampComponent } from './camp/camp.component';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -26,7 +28,15 @@ const appRoutes: Routes = [
     component: PeopleComponent,
     children: PeopleRoutes,
   },
-  { path: 'scheduling', component: SchedulingComponent },
+  {
+    path: 'camp',
+    component: CampComponent,
+    children: CampRoutes,
+  },
+  {
+    path: 'scheduling',
+    component: SchedulingComponent,
+  },
   { path: '',
     redirectTo: '/dashboard',
     pathMatch: 'full'
@@ -61,6 +71,7 @@ const appRoutes: Routes = [
     MatTableModule,
 
     PeopleModule,
+    CampModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
